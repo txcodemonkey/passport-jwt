@@ -28,6 +28,7 @@ for verifying the token's signature.
 * `audience`: If defined the toekn audience (aud) will be verified against this value.
 * `tokenBodyField`: Field in a request body to search for the jwt.  Default is auth_token.
 * `tokenHeader`: Expected authorization scheme if token is submitted through the HTTP Authorization header. Defaults to JWT
+* `addToken`: If true will add the token to jwt_payload.  Defaults to false
 
 `verify` is a function with args `verify(jwt_payload, done)`
 * `jwt_payload` is an object literal containing the decoded JWT payload.
